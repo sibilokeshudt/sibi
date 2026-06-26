@@ -248,10 +248,13 @@ footer span{color:var(--accent)}
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="#" class="nav-cta" href="assets/SIBI_LOKESH_Resume.pdf" download>Download CV</a>
+<a href="assets/SIBI_LOKESH_Resume.pdf"
+   class="nav-cta"
+   download>
+    Download Resume
+</a>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -607,33 +610,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="container">
-    <span class="section-label">Credentials</span>
-    <h2 class="section-title" style="margin-bottom:0">Certifications <span>&amp; learning</span></h2>
-    <div class="certs-grid fade-up">
-      <div class="cert-card">
-        <div class="cert-badge">🎯</div>
-        <div class="cert-title">Microsoft Azure AI Fundamentals</div>
-        <div class="cert-issuer">Microsoft · Exam AI-900</div>
-        <span class="cert-badge-label">✓ Certified</span>
-      </div>
-      <div class="cert-card cert-future">
-        <div class="cert-badge">☁️</div>
-        <div class="cert-title">Azure Developer Associate</div>
-        <div class="cert-issuer">Microsoft · Exam AZ-204</div>
-        <span class="cert-badge-label">In Progress</span>
-      </div>
-      <div class="cert-card cert-future">
-        <div class="cert-badge">🏗️</div>
-        <div class="cert-title">Azure Solutions Architect</div>
-        <div class="cert-issuer">Microsoft · Exam AZ-305</div>
-        <span class="cert-badge-label">Planned</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- EDUCATION -->
 <section id="education">
@@ -676,31 +652,69 @@ footer span{color:var(--accent)}
             <span class="contact-link-icon">🔗</span>
             <span>linkedin.com/in/sibi-lokesh-ananthapadmanapan</span>
           </a>
-          <a href="#" class="contact-link" href="assets/SIBI_LOKESH_Resume.pdf" download>
+          <a href="assets/SIBI_LOKESH_Resume.pdf"
+             class="contact-link"
+             download>
             <span class="contact-link-icon">📄</span>
             <span>Download Resume (PDF)</span>
           </a>
         </div>
       </div>
-      <form class="contact-form fade-up" action="https://api.web3forms.com/submit" method="POST"><input type="hidden" name="access_key" value="2a1c6d09-7d7f-4834-9b4b-34dff0b0093b"><input type="hidden" name="subject" value="Portfolio Contact Form">
-        <div class="form-group">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-input" placeholder="Your name" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-input" placeholder="your@email.com" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Subject</label>
-          <input type="text" class="form-input" placeholder="Job opportunity / Collaboration">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about the role or project…" required></textarea>
-        </div>
-        <button type="submit" class="form-submit">Send Message →</button>
-      </form>
+      <form class="contact-form fade-up"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden"
+           name="access_key"
+           value="2a1c6d09-7d7f-4834-9b4b-34dff0b0093b">
+
+    <input type="hidden"
+           name="subject"
+           value="Portfolio Contact Form">
+
+    <div class="form-group">
+        <label class="form-label">Name</label>
+        <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="Your name"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Email</label>
+        <input
+            type="email"
+            name="email"
+            class="form-input"
+            placeholder="your@email.com"
+            required>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input
+            type="text"
+            name="title"
+            class="form-input"
+            placeholder="Job opportunity / Collaboration">
+    </div>
+
+    <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea
+            name="message"
+            class="form-textarea"
+            placeholder="Tell me about the role or project…"
+            required></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">
+        Send Message →
+    </button>
+
+</form>
     </div>
   </div>
 </section>
